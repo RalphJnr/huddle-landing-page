@@ -1,0 +1,149 @@
+body {
+  background-image: url("./images/bg-desktop.svg");
+  background-color: hsl(257, 40%, 49%);
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.container {
+  display: grid;
+  column-gap: 40px;
+  row-gap: 40px;
+  margin: 30px 50px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.logo {
+  grid-column: 1/-1;
+  width: 150px;
+}
+
+.illustration {
+  /* width: 600px; */
+  width: 100%;
+}
+
+.heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.about {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.register {
+  background-color: white;
+  color: hsl(257, 40%, 49%);
+  border-radius: 20px;
+  padding: 10px 30px;
+  border: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.register:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+  cursor: pointer;
+}
+
+.socials {
+  grid-column: 1/-1;
+  /* justify-self: end; */
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.icon {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+
+.icon:hover {
+  cursor: pointer;
+  color: hsl(300, 69%, 71%);
+  border-color: hsl(300, 69%, 71%);
+}
+
+footer {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+a:link,
+a:hover,
+a:visited,
+a:active {
+  color: white;
+}
+
+/* media queries */
+@media (max-width: 956px) {
+  .heading {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 874px) {
+  .heading {
+    font-size: 22px;
+  }
+
+  .about,
+  .register {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 838px) {
+  .illustration {
+    width: 90%;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+
+  .section {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+  }
+
+  .register {
+    padding: 10px 60px;
+    font-size: 14px;
+  }
+
+  .about {
+    font-size: 15px;
+  }
+
+  .illustration,
+  .section {
+    grid-column: 1/-1;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+}
